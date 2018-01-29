@@ -1,0 +1,9 @@
+
+<div class="form-group">
+    <label for="file">Choose File</label>
+    <input #fileName type="file"
+           id="file" 
+           (change)="goto($event.target.files[0].name)">
+           
+</div>
+
