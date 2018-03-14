@@ -1,0 +1,15 @@
+{
+	"/springjwt/*": {
+		"target": "http://localhost:8090",
+		"secure": false
+	},
+	"/oauth/*": {
+		"target": "http://localhost:8090",
+		"secure": false
+	},
+	"/showstructure*": {
+		"target": "http://localhost:8090",
+		"secure": false
+	}
+	
+}

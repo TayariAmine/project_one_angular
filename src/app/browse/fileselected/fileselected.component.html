@@ -11,4 +11,35 @@
 <nav>
   <a routerLink="/filename/showstructure">Show structure</a>
 </nav>
+<div *ngIf= "file_tsv_csv" >
+
+<nav>
+  <a routerLink="/join">join</a>
+</nav>
+</div>
+
+
+<div *ngIf= "file_parquet" >
+
+<nav>
+  <a routerLink="/filter">filter</a>
+</nav>
+</div>
+
+ <div >
+
+ <button (click)="writetohdfs()"> write to HDFS</button>
+
+</div> 
+ <div >
+
  <button (click)="goBack()"> back</button>
+
+</div> 
+
+
+ <div >
+
+  {{written}}
+
+</div> 

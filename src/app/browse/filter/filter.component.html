@@ -1,0 +1,20 @@
+<div style="margin-top: 20px">
+filter field
+    <input #filterfield id="field " type="text" 
+        class="input">
+         
+</div>  
+<div style="margin-top: 20px">
+filter value
+    <input #filtervalue id="value " type="text" 
+        class="input">
+         
+</div> 
+<div style="margin-top: 20px">
+   
+          <button type="button" class="btn btn-primary" (click)="filter(filterfield.value,filtervalue.value)">filter</button>
+          
+</div> 
+<div>
+{{filtered_content}}
+</div> 

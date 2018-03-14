@@ -14,6 +14,7 @@ export class ShowstructureComponent implements OnInit {
   constructor(private browseservice: BrowseService) {}
 
   ngOnInit() {
+    console.log(localStorage.getItem( 'access_token') + 'fun fun');
     this.name = localStorage.getItem('the_file_name');
     this.getStructure();
 

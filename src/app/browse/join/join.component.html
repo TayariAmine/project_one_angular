@@ -1,0 +1,37 @@
+<div style="margin-top: 20px">
+ field in first file
+    <input #field_in_one id="field " type="text" 
+        class="input">
+         
+</div>  
+
+
+<div class="form-group">
+    <label for="file">select second file </label>
+    <input #file_two type="file"
+           id="file" 
+          (change)="goto($event.target.files[0].name)"  >
+           
+</div>
+
+
+<div style="margin-top: 20px">
+ field in second file
+    <input #field_in_two  id="value " type="text" 
+        class="input">
+         
+</div> 
+
+
+<div style="margin-top: 20px">
+   
+          <button type="button" class="btn btn-primary" (click)="join(field_in_one.value,field_in_two.value)">join</button>
+          
+</div>  
+<ul class="content">
+  <li *ngFor="let element of joined">
+  <div>
+  {{element}}
+</div>
+  </li>
+</ul>
